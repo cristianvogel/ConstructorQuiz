@@ -7,19 +7,19 @@ private:
     int m_radius = 10.0;
 
 public:
-    Ball() = default;
+   // Ball() = default;
 
-    Ball(std::string colour, int radius) 
+    Ball( std::string colour = "black", int radius = 10.0) 
     {
         m_colour = colour;
         m_radius = radius;
     }
-
+/*
     Ball(std::string colour) 
     {
         m_colour = colour;
     }
-
+*/
     Ball(int radius) 
     {
         m_radius = radius;
@@ -27,7 +27,7 @@ public:
 
     void print() 
     {
-        std::cout << "Colour: " << m_colour << "\t radius: " << m_radius << std::endl;
+        std::cout << "Colour: " << m_colour << "\t radius: " << m_radius << "\n";
     }
 };
 
